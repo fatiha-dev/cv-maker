@@ -1,42 +1,42 @@
-export function Education(){
-    function handleChange(){
-        return(
-            console.log("changed")
-        )
-    }
+export function Education({education, onChange}){
+    
     return(
         <div className="section education flex" >
-                <h3>Education</h3>
+            <span>
+            <h3 className="headers">Education</h3>                
+            <button className="icon">Add</button>
+            <button className="icon">Remove</button>
+            </span>   
                 <input className="form-input"
                         type="text"
                         name="degree"
-                        value=""
+                        
                         placeholder="dgree"
-                        onChange={handleChange} 
+                        onChange={onChange} 
                 />
                 <input className="form-input"
                         type="text"
                         name="university"
-                        value=""
+                        
                         placeholder="university name"
-                        onChange={handleChange} 
+                        onChange={onChange} 
                 />
                 <fieldset className="section duration">
                     <label htmlFor="startDate"/>Start date
                     <input className="form-input input--date"
                             type="date"
                             name="startDate"
-                            value=""
+                            
                             id="startDate"
-                            onChange={handleChange} 
+                            onChange={onChange} 
                     /> 
                     <label htmlFor="endDate"/>End date
                     <input className="form-input input--date"
                             type="date"
                             name="endDate"
-                            value=""
+                            
                             id="endDate"
-                            onChange={handleChange} 
+                            onChange={onChange} 
                     />  
                 </fieldset>
             </div>

@@ -1,55 +1,57 @@
-export function Personalinfos(){
-    function handleChange(){
-        return(
-            console.log("changed")
-        )
-    }
+import React from "react"
+export function Personalinfos({infos, onChange}){
+   
     return(
-        <div className="container">
             <div className="section generalInfos flex">
-                <span>
-                <h3>Personal informations</h3>
-                <button className="icon-add">Add</button>
-                <button className="icon-remove">Remove</button>
-                </span>
+                <h3 className="headers">General informations</h3>
                 <input className="form-input"
                         type="text"
                         name="firstName"
-                        value=""
                         placeholder="First name"
-
-                        onChange={handleChange} 
+                        onChange={onChange} 
                 />
                 <input className="form-input"
-                        type="text"
-                        name="lastName"
-                        value=""
-                        placeholder="Last name"
-                        onChange={handleChange} 
+                type="text"
+                name="lastName"
+                value={infos}
+                placeholder="Last name"
+                onChange={onChange} 
                 />
                 <input className="form-input"
-                        type="text"
-                        name="adress"
-                        value=""
-                        placeholder="adress "
-                        onChange={handleChange} 
+                type="text"
+                name="adress"
+                value={infos}                        
+                placeholder="adress "
+                onChange={onChange} 
                 />
                 <input className="form-input"
-                        type="email"
-                        name="email"
-                        value=""
-                        placeholder="email"
-                        onChange={handleChange} 
+                type="email"
+                name="email"
+                value={infos}                       
+                placeholder="email"
+                onChange={onChange} 
                 />
                 <input className="form-input"
-                        type="text"
-                        name="phoneNumber"
-                        value=""
-                        placeholder="phone number"
-                        onChange={handleChange} 
+                type="text"
+                name="phoneNumber"
+                value={infos}
+                placeholder="phone number"
+                onChange={onChange} 
                 />
-                <textarea className="form-area" placeholder="add description"/>
-            </div>
-        </div>
+                <input className="form-input"
+                type="text"
+                name="job" 
+                value={infos}                     
+                placeholder="add job title"
+                onChange={onChange}/> 
+                <input className="form-input"
+                type="text"
+                name="portfolio" 
+                value={infos}                     
+                placeholder="add portfolio or social media link"
+                onChange={onChange}/> 
+                
+            </div>   
     )
 }
+
