@@ -66,38 +66,80 @@ body {
   padding: 0;
   width: 20rem;
   font-family: Arial, sans-serif;
+  
 }
+
 .input--date{
   color: #646cff;
+  margin-block: 1rem;
 }
 /*  */
 /* TEMPLATE  */
 .cv-section {
   border-bottom: 2px solid #646cff;
   margin-inline: 1rem;
+  min-height: 3rem;
 }
 .template{
   width: 794px;
   height: 1122px;
-  background-color: #f8f8f8;
+  padding: 1rem;
   margin-block: 3rem;
+  background-color: #f8f8f8;
 }
-
 .cv-header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
   padding-inline: 1rem;
 }
-.fullName {
+.section--header {
+  color: #5158dd;
+  text-transform: uppercase;
+  font-size: 2ch;
+
+}
+.FullName {
   font-weight: 700;
   font-size: 3ch;
 }
-.job{
+.Job{
   font-weight: 600;
   font-size: 2ch;
 }
-.contact{
+.Contact{
   justify-content: space-around;
-}
+  font-style: italic;
 
+}
+.stillWorking{
+  color: #646cff;
+  padding: 1rem;
+}
+.Education {
+  justify-content: space-between;
+}
+.sec--degree{
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-right: 1rem;
+}
+.sec--uni{
+  font-weight: 700;
+  color: #0518e4;
+  padding-right: 1rem;
+  text-decoration: underline;
+}
+.sec--date {
+  color: #181717;
+  font-size: 1.5ch;
+}
+.Experience {
+  justify-content: space-between;
+}
+.post-descripttion{
+  width: 12rem;
+  text-align: left;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
