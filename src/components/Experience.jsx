@@ -1,44 +1,39 @@
-export function Experience(){
-    function handleChange(){
-        return(
-            console.log("changed")
-        )
-    }
+export function Experience({onChange, toPresent}){
     return(
     <div className="section experience flex">
-                <h3>Experience</h3>
+                <h3 className="headers">Experience</h3>
                 <input className="form-input"
                         type="text"
-                        name="companyName"
-                        value=""
-                        placeholder="company name"
-
-                        onChange={handleChange} 
+                        name="employer"
+                        placeholder="employer"
+                        onChange={onChange} 
                 />
                 <input className="form-input"
                         type="text"
-                        name="podtDescription"
-                        value=""
-                        placeholder="Pst description"
-                        onChange={handleChange} 
+                        name="post"
+                        placeholder="your job title"
+                        onChange={onChange} 
+                />
+                <textarea className="form-input"
+                        type="text"
+                        name="postDescription" 
+                        placeholder="What did you acieve ?"
+                        onChange={onChange} 
                 />
                 <fieldset className="section duration">
-                    <label>Starting date</label>
-                    <input className="form-input input-date"
+                    <label className="headers">Starting date</label>
+                    <input className="form-input input--date"
                             type="date"
-                            name="workStartAt"
-                            value=""
+                            name="workStartAt"   
                             id="workStartAt"
-                            onChange={handleChange} 
+                            onChange={onChange} 
                     />
-                    <label>Ending date</label>
-                    <input className="form-input input-date"
+                    <label className="headers">Ending date</label>
+                    <input className="form-input input--date"
                             type="date"
-                            name="workEndtA"
-                            value=""
-                            id="workStartAt"
-
-                            onChange={handleChange} 
+                            name="workEndAt"
+                            id="workEndAt"
+                            onChange={onChange} 
                     />
                 </fieldset>
             </div>

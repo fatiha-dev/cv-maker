@@ -2,10 +2,8 @@ export function Education({education, onChange}){
     
     return(
         <div className="section education flex" >
-            <span>
-            <h3 className="headers">Education</h3>                
-            <button className="icon">Add</button>
-            <button className="icon">Remove</button>
+            <span className="headers flex">
+            <h3 className="">Education</h3>                
             </span>   
                 <input className="form-input"
                         type="text"
@@ -39,6 +37,10 @@ export function Education({education, onChange}){
                             onChange={onChange} 
                     />  
                 </fieldset>
+                <div>
+                <button className="icon add">Save</button>
+                <button className="icon remove">Remove</button>
+                </div>
             </div>
     )
 }
