@@ -44,11 +44,15 @@ export function Template({infos,education,experience, skills}){
                 </div>  
             </div>
             <div className="cv-section">
+                <div>
+                    <h3 className="section--header">SKILLS</h3>
+                </div>
                 <ul>
-                    {skills.map(item => (
-                    <li >{item}</li>
-                ))}
+                {skills.map((item ,index)=> {
+                return <p key={index}>{item}</p>
+                })}
                 </ul>
+                
             </div>
         </div>
     )
