@@ -36,13 +36,22 @@ body {
   gap: 1rem;
 }
 .icon{
-  width: 4rem;
+  width: 6rem;
   height: 2rem;
   border: none;
   border-radius: .3rem;
   background-color: #8e93f0;
   color: #020527;
-  margin-right: .5rem; 
+  margin-block: .5rem; 
+}
+.icon-add{
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: .3rem;
+  background-color: #61e041;
+  color: #020527;
+  margin-block: .5rem; 
 }
 .form-input {
   width: 20rem;
@@ -112,10 +121,7 @@ body {
   font-style: italic;
 
 }
-.stillWorking{
-  color: #646cff;
-  padding: 1rem;
-}
+
 .Education {
   justify-content: space-between;
 }
@@ -131,7 +137,6 @@ body {
   text-decoration: underline;
 }
 .sec--date {
-  color: #181717;
   font-size: 1.5ch;
 }
 .Experience {
