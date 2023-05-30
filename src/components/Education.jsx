@@ -1,5 +1,4 @@
 export function Education({education, onChange}){
-    
     return(
         <div className="section education flex" >
             <span className="headers flex">
@@ -8,39 +7,31 @@ export function Education({education, onChange}){
                 <input className="form-input"
                         type="text"
                         name="degree"
-                        
                         placeholder="dgree"
                         onChange={onChange} 
                 />
                 <input className="form-input"
                         type="text"
                         name="university"
-                        
                         placeholder="university name"
                         onChange={onChange} 
                 />
                 <fieldset className="section duration">
-                    <label htmlFor="startDate"/>Start date
+                <label className="headers" htmlFor="startDate">Ending date</label>
                     <input className="form-input input--date"
                             type="date"
                             name="startDate"
-                            
                             id="startDate"
                             onChange={onChange} 
                     /> 
-                    <label htmlFor="endDate"/>End date
+                    <label className="headers">Ending date</label>
                     <input className="form-input input--date"
                             type="date"
-                            name="endDate"
-                            
+                            name="endDate"   
                             id="endDate"
                             onChange={onChange} 
                     />  
                 </fieldset>
-                <div>
-                <button className="icon add">Save</button>
-                <button className="icon remove">Remove</button>
-                </div>
             </div>
     )
 }
