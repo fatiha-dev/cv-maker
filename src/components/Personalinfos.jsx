@@ -1,9 +1,11 @@
 import React from "react"
 export function Personalinfos({infos, onChange}){
-   
     return(
             <div className="section generalInfos flex">
+                <div>
                 <h3 className="headers">General informations</h3>
+
+                </div>
                 <input className="form-input"
                         type="text"
                         name="firstName"
